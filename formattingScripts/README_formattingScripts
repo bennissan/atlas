@@ -1,0 +1,6 @@
+This directory contains scripts for formatting data
+
+convertToARFF9
+convertToARFF31
+        Converts from Tufts format to WEKA .arff format for files with 9 features
+        and 31 features

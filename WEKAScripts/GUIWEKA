@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export CLASSPATH=/opt/shared/weka/weka-3-6-10/weka.jar:$CLASSPATH
+export WEKADATA=/opt/shared/weka/weka-3-6-10/data
+
+java weka.gui.GUIChooser

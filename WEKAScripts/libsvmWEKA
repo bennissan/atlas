@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# Julia Rowe 
+# libsvmWEKA 
+#
+# This file is intended to run  libsvm on given
+# file. Feel free to play around with the parameters.
+#
+# USAGE: ./libsvmWEKA [TRAINING FILE] [TEST FILE] [OUTPUT]
+
+export CLASSPATH=/opt/shared/weka/weka-3-6-10/weka.jar:./libsvm.jar:$CLASSPATH
+export WEKADATA=/opt/shared/weka/weka-3-6-10/data
+
+
+java weka.classifiers.functions.LibSVM  -t $1 -d libsvm.model -i -k -K 2
+
+java weka.classifiers.functions.LibSVM   -l libsvm.model -T $2 > $3
+
+#does not save the model
+#java weka.classifiers.functions.LibSVM   #-t $1 -T $2 > $3
+
