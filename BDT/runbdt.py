@@ -3,9 +3,9 @@ runbdt.py
 Ben Nissan
 
 Trains and tests boosted decision trees through WEKA to classify a set of provided data
-with different fold counts and stump counts.  Provides information useful for determining
-the optimal values for these parameters: the number of false positives and negatives,
-as well as the overall efficiency (or accuracy).  Note: provided data should be separated
+with different stump counts.  Provides information useful for determining the optimal
+values for these parameters: the number of false positives and negatives, as
+well as the overall efficiency (or accuracy).  Note: provided data should be separated
 in advance into equally-sized training and testing groups.  Further information on
 this, and other uses for WEKA, can be found in the WEKA documentation.
 
@@ -28,8 +28,7 @@ resultFile = argv[3]
 with open(trainFile) as f:
         dataSize = sum(1 for line in f) - 7
 
-# Tables for our information; choose number of folds and stump counts as necessary
-# SEE NOTE ON HOW FOLDS WORK ABOVE
+# Tables for our information; choose stump counts as necessary
 stumpCounts = range(10, 1010, 10)
 efficiencies = []
 FPFs = []
@@ -38,7 +37,7 @@ FNFs = []
 i = 1
 for stumpCount in stumpCounts:
 	# Runs BDT program through terminal command and saves output
-	trainAndTest = ["../packages/WEKA/BDTWEKA", trainFile, testFile, str(foldCount), str(stumpCount)]
+	trainAndTest = ["../Packages/WEKA/BDTWEKA", trainFile, testFile, str(foldCount), str(stumpCount)]
 	output = Popen(trainAndTest, stdout = PIPE).stdout.read()
 	
 	# Filters out useful portions of output text

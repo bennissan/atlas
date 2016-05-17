@@ -35,7 +35,7 @@ efficiencies = []
 
 # Trains the SVM and saves the number of support vectors used
 def train(c, gamma, trainFile):
-	trainCommand = ["../packages/libsvm/svm-train", "-c", str(c), "-g", str(gamma), trainFile]
+	trainCommand = ["../Packages/libsvm/svm-train", "-c", str(c), "-g", str(gamma), trainFile]
 	stdout = Popen(trainCommand, stdout = PIPE).stdout
 	output = stdout.read()
 	nSV = int(output.split("Total nSV = ")[1])
@@ -51,7 +51,7 @@ def rename(c, gamma, trainFile):
 
 # Tests the SVM on the test data set and removes now-unnecessary model files
 def test(testFile, model):
-	testCommand = "../packages/libsvm/svm-predict " + testFile + " " + model + ".model" + " " + model + "PR.txt"
+	testCommand = "../Packages/libsvm/svm-predict " + testFile + " " + model + ".model" + " " + model + "PR.txt"
 	removeCommand = "rm " + model + ".model"
 	command(testCommand)
 	command(removeCommand)
