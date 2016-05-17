@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Jared Moskowitz
+# adaBoostWEKA
+#
+# This file is intended to run adaBoosting method on given
+# file. Feel free to play around with the parameters. When
+# this was written the ada boosting was using decision stumps
+#
+# USAGE: ./BDTWEKA [TRAINING FILE] [TEST FILE]
+# Example of running 100 stumps: 
+# java weka.classifiers.meta.AdaBoostM1 -W weka.classifiers.trees.DecisionStump -I 100 -t $1 -T $2
+
+export CLASSPATH=/opt/shared/weka/weka-3-6-10/weka.jar:$CLASSPATH
+export WEKADATA=/opt/shared/weka/weka-3-6-10/data
+
+#java weka.classifiers.meta.AdaBoostM1 -W weka.classifiers.trees.DecisionStump -t $1 -T $2
+
+java weka.classifiers.meta.AdaBoostM1 -W weka.classifiers.trees.DecisionStump -x $3 -I $4 -t $1 -T $2
