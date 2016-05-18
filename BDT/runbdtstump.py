@@ -1,8 +1,8 @@
 """
-runbdt.py
+runbdtstump.py
 Ben Nissan
 
-Trains and tests boosted decision trees through WEKA to classify a set of provided data
+Trains and tests boosted decision stumps through WEKA to classify a set of provided data
 with different stump counts.  Provides information useful for determining the optimal
 values for these parameters: the number of false positives and negatives, as
 well as the overall efficiency (or accuracy).  Note: provided data should be separated

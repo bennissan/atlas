@@ -29,15 +29,15 @@ with open(trainFile) as f:
         dataSize = sum(1 for line in f) - 7
 
 # Tables for our information; choose stump counts as necessary
-stumpCounts = range(10, 1010, 10)
+treeCounts = range(10, 1010, 10)
 efficiencies = []
 FPFs = []
 FNFs = []
 
 i = 1
-for stumpCount in stumpCounts:
+for treeCount in treeCounts:
 	# Runs BDT program through terminal command and saves output
-	trainAndTest = ["../Packages/WEKA/BDTTreeWEKA", trainFile, testFile, str(stumpCount)]
+	trainAndTest = ["../Packages/WEKA/BDTTreeWEKA", trainFile, testFile, str(treeCount)]
 	output = Popen(trainAndTest, stdout = PIPE).stdout.read()
 	
 	# Filters out useful portions of output text
@@ -55,15 +55,15 @@ for stumpCount in stumpCounts:
 	FNFs.append(FNF)
 
 	# Tracks progress
-	print "Progress: %(current)d/%(total)d" % {"current": i, "total": len(stumpCounts)}
+	print "Progress: %(current)d/%(total)d" % {"current": i, "total": len(treeCounts)}
 	i += 1
 
 
 # Saves results to file
 with open(resultFile, "w") as results:
 	j = 0
-	for stumpCount in stumpCounts:
-		line = " ".join([str(stumpCount), str(efficiencies[j]), str(FPFs[j]), str(FNFs[j]), "\n"])
+	for treeCount in treeCounts:
+		line = " ".join([str(treeCount), str(efficiencies[j]), str(FPFs[j]), str(FNFs[j]), "\n"])
 		results.write(line)
 		j += 1
 

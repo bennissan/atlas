@@ -1,8 +1,0 @@
-#!/bin/bash
-
-python runbdttree.py linearoddsold.arff linearevensold.arff ResultsTree/linearnonoverlap0518
-python runbdttree.py linearodds.arff linearevens.arff ResultsTree/linearoverlap0518
-python runbdttree.py circleoddsold.arff circleevensold.arff ResultsTree/circlenonoverlap0518
-python runbdttree.py circleodds.arff circleevens.arff ResultsTree/circleoverlap0518
-python runbdttree.py twocircleoddsold.arff twocircleevensold.arff ResultsTree/twocirclenonoverlap0518
-python runbdttree.py twocircleodds.arff twocircleevens.arff ResultsTree/twocircleoverlap0518
