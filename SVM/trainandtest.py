@@ -38,7 +38,7 @@ def train(c, gamma, trainFile):
 	trainCommand = ["../Packages/libsvm/svm-train", "-c", str(c), "-g", str(gamma), trainFile]
 	stdout = Popen(trainCommand, stdout = PIPE).stdout
 	output = stdout.read()
-	nSV = int(output.split("Total nSV = ")[1])
+        nSV = int(output.split("Total nSV = ")[1])
 	nSVs.append(nSV)
 
 # Renames model files to note chosen c and gamma values; files would otherwise
@@ -46,7 +46,7 @@ def train(c, gamma, trainFile):
 def rename(c, gamma, trainFile):
 	newModel = trainFile + "c" + str(c) + "g" + str(gamma)
 	renameCommand = "mv " + trainFile + ".model " + newModel + ".model"
-	command(renameCommand)
+        command(renameCommand)
 	return newModel
 
 # Tests the SVM on the test data set and removes now-unnecessary model files
@@ -86,7 +86,7 @@ def compare(testFile, model):
 		elif data[i] > results[i]:
 			falseNeg += 1
 
-	
+
 	# Calculates false positive and negative
 	# fraction, as well as overall efficiency
 	FPF = float(falsePos) / float(background)
