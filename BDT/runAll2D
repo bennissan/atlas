@@ -1,0 +1,8 @@
+#!/bin/bash
+
+python runbdt.py linearoddsold.arff linearevensold.arff Results/linearnonoverlap0518
+python runbdt.py linearodds.arff linearevens.arff Results/linearoverlap0518
+python runbdt.py circleoddsold.arff circleevensold.arff Results/circlenonoverlap0518
+python runbdt.py circleodds.arff circleevens.arff Results/circleoverlap0518
+python runbdt.py twocircleoddsold.arff twocircleevensold.arff Results/twocirclenonoverlap0518
+python runbdt.py twocircleodds.arff twocircleevens.arff Results/twocircleoverlap0518

@@ -37,7 +37,7 @@ FNFs = []
 i = 1
 for stumpCount in stumpCounts:
 	# Runs BDT program through terminal command and saves output
-	trainAndTest = ["../Packages/WEKA/BDTWEKA", trainFile, testFile, str(foldCount), str(stumpCount)]
+	trainAndTest = ["../Packages/WEKA/BDTWEKA", trainFile, testFile, str(stumpCount)]
 	output = Popen(trainAndTest, stdout = PIPE).stdout.read()
 	
 	# Filters out useful portions of output text
@@ -63,7 +63,7 @@ for stumpCount in stumpCounts:
 with open(resultFile, "w") as results:
 	j = 0
 	for stumpCount in stumpCounts:
-		line = " ".join([str(foldCount), str(stumpCount), str(efficiencies[j]), str(FPFs[j]), str(FNFs[j]), "\n"])
+		line = " ".join([str(stumpCount), str(efficiencies[j]), str(FPFs[j]), str(FNFs[j]), "\n"])
 		results.write(line)
 		j += 1
 
