@@ -11,7 +11,7 @@ for i in range(2000):
 	else:
 		Class = -1
 	if x - 1 < y < x + 1:
-		if random.random() <= .1:
+		if random.random() <= .15:
 			Class *= -1
 	if Class == 1:
 		table[i][0] = "+1"

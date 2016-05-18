@@ -11,8 +11,8 @@ for i in range(10000):
 		Class = 1
 	else:
 		Class = -1
-	if 2.25 < (x - 2) ** 2 + (y - 2) ** 2 + (z - 2) ** 2 < 6.25 or 2.25 < (x - 6) ** 2 + (y - 6) ** 2 + (z - 6) ** 2 < 6.25:
-		if random.random() <= .1:
+	if 2.25 < (x - 2) ** 2 + (y - 2) ** 2 + (z - 2) ** 2 < 6.25 or 1.5 < (x - 6) ** 2 + (y - 6) ** 2 + (z - 6) ** 2 < 2.5:
+		if random.random() <= .15:
 			Class *= -1
 	if Class == 1:
 		table[i][0] = "+1"

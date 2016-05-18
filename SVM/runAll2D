@@ -1,8 +1,8 @@
 #!/bin/bash
 
-python trainandtest.py linearoddsold linearevensold Results/linearnonoverlap0518
-python trainandtest.py linearodds linearevens Results/linearoverlap0518
-python trainandtest.py circleoddsold circleevensold Results/circlenonoverlap0518
-python trainandtest.py circleodds circleevens Results/circleoverlap0518
-python trainandtest.py twocircleoddsold twocircleevensold Results/twocirclenonoverlap0518
-python trainandtest.py twocircleodds twocircleevens Results/twocircleoverlap0518
+python trainandtest.py linearhardodds linearhardevens Results/linearhard0518
+python trainandtest.py linearsoftodds linearsoftevens Results/linearsoft0518
+python trainandtest.py circlehardodds circlehardevens Results/circlehard0518
+python trainandtest.py circlesoftodds circlesoftevens Results/circlesoft0518
+python trainandtest.py twocirclehardodds twocirclehardevens Results/twocirclehard0518
+python trainandtest.py twocirclesoftodds twocirclesoftevens Results/twocirclesoft0518
