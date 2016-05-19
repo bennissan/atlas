@@ -1,5 +1,6 @@
 #!/bin/bash
 
+python runSVM.py uniformodds uniformevens Results/uniform0519
 python runSVM.py linearhardodds linearhardevens Results/linearhard0519
 python runSVM.py linearsoftodds linearsoftevens Results/linearsoft0519
 python runSVM.py circlehardodds circlehardevens Results/circlehard0519

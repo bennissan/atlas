@@ -89,8 +89,22 @@ def compare(testFile, model):
 
 	# Calculates false positive and negative
 	# fraction, as well as overall efficiency
-	FPF = float(falsePos) / float(background)
-	FNF = float(falseNeg) / float(signal)
+	if background == 0:
+		if falsePos == 0:
+			FPF = 0
+		else:
+			FPF = 1
+	else:
+		FPF = float(falsePos) / float(background)
+
+	if signal == 0:
+		if falseNeg == 0:
+			FNF = 0
+		else:
+			FNF = 1
+	else:
+		FNF = float(falseNeg) / float(signal)
+		
 	efficiency = 1 - FNF
 
 	FPFs.append(FPF)
