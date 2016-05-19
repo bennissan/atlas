@@ -44,10 +44,9 @@ for treeCount in treeCounts:
 	confusionMatrix = output.split("=== Error on test data ===")[1].split("classified as")[1].split()
 
 	# Extracts information needed from portions of output text
-        efficiency = (float(confusionMatrix[0]) + float(confusionMatrix[7])) / dataSize
-
 	FPF = float(confusionMatrix[6]) / dataSize
 	FNF = float(confusionMatrix[1]) / dataSize
+	efficiency = 1 - FNF
 	
 	# Appends information to tables
 	efficiencies.append(efficiency)

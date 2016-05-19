@@ -1,8 +1,8 @@
 #!/bin/bash
 
-python trainandtest.py linearhardodds linearhardevens Results/linearhard0519
-python trainandtest.py linearsoftodds linearsoftevens Results/linearsoft0519
-python trainandtest.py circlehardodds circlehardevens Results/circlehard0519
-python trainandtest.py circlesoftodds circlesoftevens Results/circlesoft0519
-python trainandtest.py twocirclehardodds twocirclehardevens Results/twocirclehard0519
-python trainandtest.py twocirclesoftodds twocirclesoftevens Results/twocirclesoft0519
+python runSVM.py linearhardodds linearhardevens Results/linearhard0519
+python runSVM.py linearsoftodds linearsoftevens Results/linearsoft0519
+python runSVM.py circlehardodds circlehardevens Results/circlehard0519
+python runSVM.py circlesoftodds circlesoftevens Results/circlesoft0519
+python runSVM.py twocirclehardodds twocirclehardevens Results/twocirclehard0519
+python runSVM.py twocirclesoftodds twocirclesoftevens Results/twocirclesoft0519

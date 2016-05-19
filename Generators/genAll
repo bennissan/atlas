@@ -1,5 +1,6 @@
 #!/bin/bash
 
+python uniformgen.py
 python linearhardgen.py
 python linearsoftgen.py
 python circlehardgen.py
