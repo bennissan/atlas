@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sbatch -p batch ./runAll2DTree.sh --time=0:02:00
+sbatch -p batch ./runAll2DTree --time=0:02:00
 
