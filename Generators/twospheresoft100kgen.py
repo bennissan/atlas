@@ -1,8 +1,8 @@
 import random
 
-table = [[0 for i in range(4)] for i in range(100000)] 
+table = [[0 for i in range(4)] for i in range(200000)] 
 
-for i in range(100000):
+for i in range(200000):
 	f1 = random.uniform(0, 10)
 	f2 = random.uniform(0, 10)
 	f3 = random.uniform(0, 10)
@@ -22,9 +22,9 @@ for i in range(100000):
 	table[i][3] = f3
 
 with open('twospheresoft100kevens', 'w') as evens:
-	for i in range(0, 100000, 2):
+	for i in range(0, 200000, 2):
 		evens.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + " 3:" + str(table[i][3]) + "\n")
 
 with open('twospheresoft100kodds', 'w') as odds:
-	for i in range(1, 100000, 2):
+	for i in range(1, 200000, 2):
 		odds.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + " 3:" + str(table[i][3]) + "\n")
