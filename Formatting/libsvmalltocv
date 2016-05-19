@@ -1,0 +1,26 @@
+#!/bin/bash
+
+python libsvmtocsv2d.py linearhardodds
+python libsvmtocsv2d.py linearhardevens
+python libsvmtocsv2d.py linearsoftodds
+python libsvmtocsv2d.py linearsoftevens
+
+python libsvmtocsv2d.py circlehardodds
+python libsvmtocsv2d.py circlehardevens
+python libsvmtocsv2d.py circlesoftodds
+python libsvmtocsv2d.py circlesoftevens
+
+python libsvmtocsv2d.py twocirclehardodds
+python libsvmtocsv2d.py twocirclehardevens
+python libsvmtocsv2d.py twocirclesoftodds
+python libsvmtocsv2d.py twocirclesoftevens
+
+python libsvmtocsv3d.py twospherehardodds
+python libsvmtocsv3d.py twospherehardevens
+python libsvmtocsv3d.py twospheresoftodds
+python libsvmtocsv3d.py twospheresoftevens
+
+python libsvmtocsv3d.py twospherehard100kodds
+python libsvmtocsv3d.py twospherehard100kevens
+python libsvmtocsv3d.py twospheresoft100kodds
+python libsvmtocsv3d.py twospheresoft100kevens
