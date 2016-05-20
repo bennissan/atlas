@@ -8,7 +8,6 @@
 #SBATCH --mail-type=END,FAIL	                                     
 #SBATCH --mail-user=ben.nissan@tufts.edu                 
 
-sbatch run2DTree uniformodds.arff uniformevens.arff ResultsTree/uniform0520
 sbatch run2DTree linearhardodds.arff linearhardevens.arff ResultsTree/linearhard0520
 sbatch run2DTree linearsoftodds.arff linearsoftevens.arff ResultsTree/linearsoft0520
 sbatch run2DTree circlehardodds.arff circlehardevens.arff ResultsTree/circlehard0520

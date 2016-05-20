@@ -1,6 +1,5 @@
 #!/bin/bash
 
-python uniformgen.py
 python linearhardgen.py
 python linearsoftgen.py
 python circlehardgen.py
@@ -9,5 +8,5 @@ python twocirclehardgen.py
 python twocirclesoftgen.py
 python twospherehardgen.py
 python twospheresoftgen.py
-python twospherehard100kgen.py
-python twospheresoft100kgen.py
+python twospherehard1mgen.py
+python twospheresoft1mgen.py

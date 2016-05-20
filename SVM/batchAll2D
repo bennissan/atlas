@@ -8,10 +8,28 @@
 #SBATCH --mail-type=END,FAIL                                         
 #SBATCH --mail-user=ben.nissan@tufts.edu                 
 
-sbatch run2D uniformodds uniformevens Results/uniform0520
-sbatch run2D linearhardodds linearhardevens Results/linearhard0520
-sbatch run2D linearsoftodds linearsoftevens Results/linearsoft0520
-sbatch run2D circlehardodds circlehardevens Results/circlehard0520
-sbatch run2D circlesoftodds circlesoftevens Results/circlesoft0520
-sbatch run2D twocirclehardodds twocirclehardevens Results/twocirclehard0520
-sbatch run2D twocirclesoftodds twocirclesoftevens Results/twocirclesoft0520
+sbatch run2D LinearHardTraining LinearHardTestingAll Results/LinearHardTestingAll0520
+sbatch run2D LinearHardTraining LinearHardTestingSignal Results/LinearHardTestingSignal0520
+sbatch run2D LinearHardTraining LinearHardTestingBackground Results/LinearHardTestingBackground0520
+
+sbatch run2D LinearSoftTraining LinearSoftTestingAll Results/LinearSoftTestingAll0520
+sbatch run2D LinearSoftTraining LinearSoftTestingSignal Results/LinearSoftTestingSignal0520
+sbatch run2D LinearSoftTraining LinearSoftTestingBackground Results/LinearSoftTestingBackground0520
+
+
+sbatch run2D CircleHardTraining CircleHardTestingAll Results/CircleHardTestingAll0520
+sbatch run2D CircleHardTraining CircleHardTestingSignal Results/CircleHardTestingSignal0520
+sbatch run2D CircleHardTraining CircleHardTestingBackground Results/CircleHardTestingBackground0520
+
+sbatch run2D CircleSoftTraining CircleSoftTestingAll Results/CircleSoftTestingAll0520
+sbatch run2D CircleSoftTraining CircleSoftTestingSignal Results/CircleSoftTestingSignal0520
+sbatch run2D CircleSoftTraining CircleSoftTestingBackground Results/CircleSoftTestingBackground0520
+
+
+sbatch run2D TwoCircleHardTraining TwoCircleHardTestingAll Results/TwoCircleHardTestingAll0520
+sbatch run2D TwoCircleHardTraining TwoCircleHardTestingSignal Results/TwoCircleHardTestingSignal0520
+sbatch run2D TwoCircleHardTraining TwoCircleHardTestingBackground Results/TwoCircleHardTestingBackground0520
+
+sbatch run2D TwoCircleSoftTraining TwoCircleSoftTestingAll Results/TwoCircleSoftTestingAll0520
+sbatch run2D TwoCircleSoftTraining TwoCircleSoftTestingSignal Results/TwoCircleSoftTestingSignal0520
+sbatch run2D TwoCircleSoftTraining TwoCircleSoftTestingBackground Results/TwoCircleSoftTestingBackground0520

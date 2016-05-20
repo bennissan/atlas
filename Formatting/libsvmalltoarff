@@ -1,29 +1,55 @@
 #!/bin/bash
 
-python libsvmtoarff2d.py uniformodds
-python libsvmtoarff2d.py uniformevens
+python libsvmtoarff2d.py LinearHardTraining
+python libsvmtoarff2d.py LinearHardTestingAll
+python libsvmtoarff2d.py LinearHardTestingSignal
+python libsvmtoarff2d.py LinearHardTestingBackground
 
-python libsvmtoarff2d.py linearhardodds
-python libsvmtoarff2d.py linearhardevens
-python libsvmtoarff2d.py linearsoftodds
-python libsvmtoarff2d.py linearsoftevens
+python libsvmtoarff2d.py LinearSoftTraining
+python libsvmtoarff2d.py LinearSoftTestingAll
+python libsvmtoarff2d.py LinearSoftTestingSignal
+python libsvmtoarff2d.py LinearSoftTestingBackground
 
-python libsvmtoarff2d.py circlehardodds
-python libsvmtoarff2d.py circlehardevens
-python libsvmtoarff2d.py circlesoftodds
-python libsvmtoarff2d.py circlesoftevens
 
-python libsvmtoarff2d.py twocirclehardodds
-python libsvmtoarff2d.py twocirclehardevens
-python libsvmtoarff2d.py twocirclesoftodds
-python libsvmtoarff2d.py twocirclesoftevens
+python libsvmtoarff2d.py CircleHardTraining
+python libsvmtoarff2d.py CircleHardTestingAll
+python libsvmtoarff2d.py CircleHardTestingSignal
+python libsvmtoarff2d.py CircleHardTestingBackground
 
-python libsvmtoarff3d.py twospherehardodds
-python libsvmtoarff3d.py twospherehardevens
-python libsvmtoarff3d.py twospheresoftodds
-python libsvmtoarff3d.py twospheresoftevens
+python libsvmtoarff2d.py CircleSoftTraining
+python libsvmtoarff2d.py CircleSoftTestingAll
+python libsvmtoarff2d.py CircleSoftTestingSignal
+python libsvmtoarff2d.py CircleSoftTestingBackground
 
-python libsvmtoarff3d.py twospherehard100kodds
-python libsvmtoarff3d.py twospherehard100kevens
-python libsvmtoarff3d.py twospheresoft100kodds
-python libsvmtoarff3d.py twospheresoft100kevens
+
+python libsvmtoarff2d.py TwoCircleHardTraining
+python libsvmtoarff2d.py TwoCircleHardTestingAll
+python libsvmtoarff2d.py TwoCircleHardTestingSignal
+python libsvmtoarff2d.py TwoCircleHardTestingBackground
+
+python libsvmtoarff2d.py TwoCircleSoftTraining
+python libsvmtoarff2d.py TwoCircleSoftTestingAll
+python libsvmtoarff2d.py TwoCircleSoftTestingSignal
+python libsvmtoarff2d.py TwoCircleSoftTestingBackground
+
+
+python libsvmtoarff3d.py TwoSphereHardTraining
+python libsvmtoarff3d.py TwoSphereHardTestingAll
+python libsvmtoarff3d.py TwoSphereHardTestingSignal
+python libsvmtoarff3d.py TwoSphereHardTestingBackground
+
+python libsvmtoarff3d.py TwoSphereSoftTraining
+python libsvmtoarff3d.py TwoSphereSoftTestingAll
+python libsvmtoarff3d.py TwoSphereSoftTestingSignal
+python libsvmtoarff3d.py TwoSphereSoftTestingBackground
+
+
+python libsvmtoarff3d.py TwoSphereHard1MTraining
+python libsvmtoarff3d.py TwoSphereHard1MTestingAll
+python libsvmtoarff3d.py TwoSphereHard1MTestingSignal
+python libsvmtoarff3d.py TwoSphereHard1MTestingBackground
+
+python libsvmtoarff3d.py TwoSphereSoft1MTraining
+python libsvmtoarff3d.py TwoSphereSoft1MTestingAll
+python libsvmtoarff3d.py TwoSphereSoft1MTestingSignal
+python libsvmtoarff3d.py TwoSphereSoft1MTestingBackground

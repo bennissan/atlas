@@ -1,29 +1,55 @@
 #!/bin/bash
 
-python libsvmtocsv2d.py uniformodds
-python libsvmtocsv2d.py uniformevens
+python libsvmtocsv2d.py LinearHardTraining
+python libsvmtocsv2d.py LinearHardTestingAll
+python libsvmtocsv2d.py LinearHardTestingSignal
+python libsvmtocsv2d.py LinearHardTestingBackground
 
-python libsvmtocsv2d.py linearhardodds
-python libsvmtocsv2d.py linearhardevens
-python libsvmtocsv2d.py linearsoftodds
-python libsvmtocsv2d.py linearsoftevens
+python libsvmtocsv2d.py LinearSoftTraining
+python libsvmtocsv2d.py LinearSoftTestingAll
+python libsvmtocsv2d.py LinearSoftTestingSignal
+python libsvmtocsv2d.py LinearSoftTestingBackground
 
-python libsvmtocsv2d.py circlehardodds
-python libsvmtocsv2d.py circlehardevens
-python libsvmtocsv2d.py circlesoftodds
-python libsvmtocsv2d.py circlesoftevens
 
-python libsvmtocsv2d.py twocirclehardodds
-python libsvmtocsv2d.py twocirclehardevens
-python libsvmtocsv2d.py twocirclesoftodds
-python libsvmtocsv2d.py twocirclesoftevens
+python libsvmtocsv2d.py CircleHardTraining
+python libsvmtocsv2d.py CircleHardTestingAll
+python libsvmtocsv2d.py CircleHardTestingSignal
+python libsvmtocsv2d.py CircleHardTestingBackground
 
-python libsvmtocsv3d.py twospherehardodds
-python libsvmtocsv3d.py twospherehardevens
-python libsvmtocsv3d.py twospheresoftodds
-python libsvmtocsv3d.py twospheresoftevens
+python libsvmtocsv2d.py CircleSoftTraining
+python libsvmtocsv2d.py CircleSoftTestingAll
+python libsvmtocsv2d.py CircleSoftTestingSignal
+python libsvmtocsv2d.py CircleSoftTestingBackground
 
-python libsvmtocsv3d.py twospherehard100kodds
-python libsvmtocsv3d.py twospherehard100kevens
-python libsvmtocsv3d.py twospheresoft100kodds
-python libsvmtocsv3d.py twospheresoft100kevens
+
+python libsvmtocsv2d.py TwoCircleHardTraining
+python libsvmtocsv2d.py TwoCircleHardTestingAll
+python libsvmtocsv2d.py TwoCircleHardTestingSignal
+python libsvmtocsv2d.py TwoCircleHardTestingBackground
+
+python libsvmtocsv2d.py TwoCircleSoftTraining
+python libsvmtocsv2d.py TwoCircleSoftTestingAll
+python libsvmtocsv2d.py TwoCircleSoftTestingSignal
+python libsvmtocsv2d.py TwoCircleSoftTestingBackground
+
+
+python libsvmtocsv3d.py TwoSphereHardTraining
+python libsvmtocsv3d.py TwoSphereHardTestingAll
+python libsvmtocsv3d.py TwoSphereHardTestingSignal
+python libsvmtocsv3d.py TwoSphereHardTestingBackground
+
+python libsvmtocsv3d.py TwoSphereSoftTraining
+python libsvmtocsv3d.py TwoSphereSoftTestingAll
+python libsvmtocsv3d.py TwoSphereSoftTestingSignal
+python libsvmtocsv3d.py TwoSphereSoftTestingBackground
+
+
+python libsvmtocsv3d.py TwoSphereHard1MTraining
+python libsvmtocsv3d.py TwoSphereHard1MTestingAll
+python libsvmtocsv3d.py TwoSphereHard1MTestingSignal
+python libsvmtocsv3d.py TwoSphereHard1MTestingBackground
+
+python libsvmtocsv3d.py TwoSphereSoft1MTraining
+python libsvmtocsv3d.py TwoSphereSoft1MTestingAll
+python libsvmtocsv3d.py TwoSphereSoft1MTestingSignal
+python libsvmtocsv3d.py TwoSphereSoft1MTestingBackground
