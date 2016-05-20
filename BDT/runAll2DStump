@@ -1,8 +1,27 @@
 #!/bin/bash
 
-python runBDTStump.py linearhardodds.arff linearhardevens.arff ResultsStump/linearhard0519
-python runBDTStump.py linearsoftodds.arff linearsoftevens.arff ResultsStump/linearsoft0519
-python runBDTStump.py circlehardodds.arff circlehardevens.arff ResultsStump/circlehard0519
-python runBDTStump.py circlesoftodds.arff circlesoftevens.arff ResultsStump/circlesoft0519
-python runBDTStump.py twocirclehardodds.arff twocirclehardevens.arff ResultsStump/twocirclehard0519
-python runBDTStump.py twocirclesoftodds.arff twocirclesoftevens.arff ResultsStump/twocirclesoft0519
+python runBDTStump.py LinearHardTraining.arff LinearHardTestingAll.arff Results/LinearHardTestingAll0520
+python runBDTStump.py LinearHardTraining.arff LinearHardTestingSignal.arff Results/LinearHardTestingSignal0520
+python runBDTStump.py LinearHardTraining.arff LinearHardTestingBackground.arff Results/LinearHardTestingBackground0520
+
+python runBDTStump.py LinearSoftTraining.arff LinearSoftTestingAll.arff Results/LinearSoftTestingAll0520
+python runBDTStump.py LinearSoftTraining.arff LinearSoftTestingSignal.arff Results/LinearSoftTestingSignal0520
+python runBDTStump.py LinearSoftTraining.arff LinearSoftTestingBackground.arff Results/LinearSoftTestingBackground0520
+
+
+python runBDTStump.py CircleHardTraining.arff CircleHardTestingAll.arff Results/CircleHardTestingAll0520
+python runBDTStump.py CircleHardTraining.arff CircleHardTestingSignal.arff Results/CircleHardTestingSignal0520
+python runBDTStump.py CircleHardTraining.arff CircleHardTestingBackground.arff Results/CircleHardTestingBackground0520
+
+python runBDTStump.py CircleSoftTraining.arff CircleSoftTestingAll.arff Results/CircleSoftTestingAll0520
+python runBDTStump.py CircleSoftTraining.arff CircleSoftTestingSignal.arff Results/CircleSoftTestingSignal0520
+python runBDTStump.py CircleSoftTraining.arff CircleSoftTestingBackground.arff Results/CircleSoftTestingBackground0520
+
+
+python runBDTStump.py TwoCircleHardTraining.arff TwoCircleHardTestingAll.arff Results/TwoCircleHardTestingAll0520
+python runBDTStump.py TwoCircleHardTraining.arff TwoCircleHardTestingSignal.arff Results/TwoCircleHardTestingSignal0520
+python runBDTStump.py TwoCircleHardTraining.arff TwoCircleHardTestingBackground.arff Results/TwoCircleHardTestingBackground0520
+
+python runBDTStump.py TwoCircleSoftTraining.arff TwoCircleSoftTestingAll.arff Results/TwoCircleSoftTestingAll0520
+python runBDTStump.py TwoCircleSoftTraining.arff TwoCircleSoftTestingSignal.arff Results/TwoCircleSoftTestingSignal0520
+python runBDTStump.py TwoCircleSoftTraining.arff TwoCircleSoftTestingBackground.arff Results/TwoCircleSoftTestingBackground0520

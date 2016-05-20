@@ -5,12 +5,31 @@
 #SBATCH -n 1
 #SBATCH -t 0-6:00
 #SBATCH --mem 5000
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=ben.nissan@tufts.edu
+#SBATCH --mail-type=END,FAIL                                         
+#SBATCH --mail-user=ben.nissan@tufts.edu                 
 
-sbatch run2DStump linearhardodds.arff linearhardevens.arff ResultsStump/linearhard0520
-sbatch run2DStump linearsoftodds.arff linearsoftevens.arff ResultsStump/linearsoft0520
-sbatch run2DStump circlehardodds.arff circlehardevens.arff ResultsStump/circlehard0520
-sbatch run2DStump circlesoftodds.arff circlesoftevens.arff ResultsStump/circlesoft0520
-sbatch run2DStump twocirclehardodds.arff twocirclehardevens.arff ResultsStump/twocirclehard0520
-sbatch run2DStump twocirclesoftodds.arff twocirclesoftevens.arff ResultsStump/twocirclesoft0520
+sbatch run2DStump LinearHardTraining.arff LinearHardTestingAll.arff Results/LinearHardTestingAll0520
+sbatch run2DStump LinearHardTraining.arff LinearHardTestingSignal.arff Results/LinearHardTestingSignal0520
+sbatch run2DStump LinearHardTraining.arff LinearHardTestingBackground.arff Results/LinearHardTestingBackground0520
+
+sbatch run2DStump LinearSoftTraining.arff LinearSoftTestingAll.arff Results/LinearSoftTestingAll0520
+sbatch run2DStump LinearSoftTraining.arff LinearSoftTestingSignal.arff Results/LinearSoftTestingSignal0520
+sbatch run2DStump LinearSoftTraining.arff LinearSoftTestingBackground.arff Results/LinearSoftTestingBackground0520
+
+
+sbatch run2DStump CircleHardTraining.arff CircleHardTestingAll.arff Results/CircleHardTestingAll0520
+sbatch run2DStump CircleHardTraining.arff CircleHardTestingSignal.arff Results/CircleHardTestingSignal0520
+sbatch run2DStump CircleHardTraining.arff CircleHardTestingBackground.arff Results/CircleHardTestingBackground0520
+
+sbatch run2DStump CircleSoftTraining.arff CircleSoftTestingAll.arff Results/CircleSoftTestingAll0520
+sbatch run2DStump CircleSoftTraining.arff CircleSoftTestingSignal.arff Results/CircleSoftTestingSignal0520
+sbatch run2DStump CircleSoftTraining.arff CircleSoftTestingBackground.arff Results/CircleSoftTestingBackground0520
+
+
+sbatch run2DStump TwoCircleHardTraining.arff TwoCircleHardTestingAll.arff Results/TwoCircleHardTestingAll0520
+sbatch run2DStump TwoCircleHardTraining.arff TwoCircleHardTestingSignal.arff Results/TwoCircleHardTestingSignal0520
+sbatch run2DStump TwoCircleHardTraining.arff TwoCircleHardTestingBackground.arff Results/TwoCircleHardTestingBackground0520
+
+sbatch run2DStump TwoCircleSoftTraining.arff TwoCircleSoftTestingAll.arff Results/TwoCircleSoftTestingAll0520
+sbatch run2DStump TwoCircleSoftTraining.arff TwoCircleSoftTestingSignal.arff Results/TwoCircleSoftTestingSignal0520
+sbatch run2DStump TwoCircleSoftTraining.arff TwoCircleSoftTestingBackground.arff Results/TwoCircleSoftTestingBackground0520
