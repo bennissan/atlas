@@ -1,3 +1,18 @@
 #!/bin/bash
 
-sbatch -p batch ./runAll2DStump --time=0:02:00
+#SBATCH -p largemem
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 0-6:00
+#SBATCH --mem 5000
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=ben.nissan@tufts.edu
+
+sbatch run2DStump uniformodds.arff uniformevens.arff ResultsStump/uniform0520
+sbatch run2DStump linearhardodds.arff linearhardevens.arff ResultsStump/linearhard0520
+sbatch run2DStump linearsoftodds.arff linearsoftevens.arff ResultsStump/linearsoft0520
+sbatch run2DStump circlehardodds.arff circlehardevens.arff ResultsStump/circlehard0520
+sbatch run2DStump circlesoftodds.arff circlesoftevens.arff ResultsStump/circlesoft0520
+sbatch run2DStump twocirclehardodds.arff twocirclehardevens.arff ResultsStump/twocirclehard0520
+sbatch run2DStump twocirclesoftodds.arff twocirclesoftevens.arff ResultsStump/twocirclesoft0520
+

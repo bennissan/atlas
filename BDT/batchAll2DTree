@@ -1,4 +1,17 @@
 #!/bin/bash
 
-sbatch -p batch ./runAll2DTree --time=0:02:00
+#SBATCH	-p largemem
+#SBATCH	-N 1
+#SBATCH	-n 1
+#SBATCH	-t 0-6:00
+#SBATCH	--mem 5000
+#SBATCH --mail-type=END,FAIL	                                     
+#SBATCH --mail-user=ben.nissan@tufts.edu                 
 
+sbatch run2DTree uniformodds.arff uniformevens.arff ResultsTree/uniform0520
+sbatch run2DTree linearhardodds.arff linearhardevens.arff ResultsTree/linearhard0520
+sbatch run2DTree linearsoftodds.arff linearsoftevens.arff ResultsTree/linearsoft0520
+sbatch run2DTree circlehardodds.arff circlehardevens.arff ResultsTree/circlehard0520
+sbatch run2DTree circlesoftodds.arff circlesoftevens.arff ResultsTree/circlesoft0520
+sbatch run2DTree twocirclehardodds.arff twocirclehardevens.arff ResultsTree/twocirclehard0520
+sbatch run2DTree twocirclesoftodds.arff twocirclesoftevens.arff ResultsTree/twocirclesoft0520
