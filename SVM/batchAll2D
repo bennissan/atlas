@@ -1,3 +1,17 @@
 #!/bin/bash
 
-sbatch -p batch ./runAll2D --time=1-2:00:00
+#SBATCH -p largemem
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH -t 0-6:00
+#SBATCH --mem 5000
+#SBATCH --mail-type=END,FAIL                                         
+#SBATCH --mail-user=ben.nissan@tufts.edu                 
+
+sbatch run2D uniformodds uniformevens Results/uniform0520
+sbatch run2D linearhardodds linearhardevens Results/linearhard0520
+sbatch run2D linearsoftodds linearsoftevens Results/linearsoft0520
+sbatch run2D circlehardodds circlehardevens Results/circlehard0520
+sbatch run2D circlesoftodds circlesoftevens Results/circlesoft0520
+sbatch run2D twocirclehardodds twocirclehardevens Results/twocirclehard0520
+sbatch run2D twocirclesoftodds twocirclesoftevens Results/twocirclesoft0520
