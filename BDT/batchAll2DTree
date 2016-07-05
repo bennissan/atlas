@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p batch
+#SBATCH -p largemem
 #SBATCH --constraint=M3
 #SBATCH --ntasks-per-core=1
 #SBATCH --ntasks=1
@@ -8,28 +8,28 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=bnissa01@tufts.edu
 
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearHardTraining.arff LinearHardTestingAll.arff ResultsTree/LinearHardTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearHardTraining.arff LinearHardTestingSignal.arff ResultsTree/LinearHardTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearHardTraining.arff LinearHardTestingBackground.arff ResultsTree/LinearHardTestingBackground0611
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearHardTraining.arff LinearHardTestingAll.arff ResultsTree/LinearHardTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearHardTraining.arff LinearHardTestingSignal.arff ResultsTree/LinearHardTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearHardTraining.arff LinearHardTestingBackground.arff ResultsTree/LinearHardTestingBackground0705
 
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearSoftTraining.arff LinearSoftTestingAll.arff ResultsTree/LinearSoftTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearSoftTraining.arff LinearSoftTestingSignal.arff ResultsTree/LinearSoftTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree LinearSoftTraining.arff LinearSoftTestingBackground.arff ResultsTree/LinearSoftTestingBackground0611
-
-
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleHardTraining.arff CircleHardTestingAll.arff ResultsTree/CircleHardTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleHardTraining.arff CircleHardTestingSignal.arff ResultsTree/CircleHardTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleHardTraining.arff CircleHardTestingBackground.arff ResultsTree/CircleHardTestingBackground0611
-
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleSoftTraining.arff CircleSoftTestingAll.arff ResultsTree/CircleSoftTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleSoftTraining.arff CircleSoftTestingSignal.arff ResultsTree/CircleSoftTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree CircleSoftTraining.arff CircleSoftTestingBackground.arff ResultsTree/CircleSoftTestingBackground0611
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearSoftTraining.arff LinearSoftTestingAll.arff ResultsTree/LinearSoftTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearSoftTraining.arff LinearSoftTestingSignal.arff ResultsTree/LinearSoftTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree LinearSoftTraining.arff LinearSoftTestingBackground.arff ResultsTree/LinearSoftTestingBackground0705
 
 
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingAll.arff ResultsTree/TwoCircleHardTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingSignal.arff ResultsTree/TwoCircleHardTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingBackground.arff ResultsTree/TwoCircleHardTestingBackground0611
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleHardTraining.arff CircleHardTestingAll.arff ResultsTree/CircleHardTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleHardTraining.arff CircleHardTestingSignal.arff ResultsTree/CircleHardTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleHardTraining.arff CircleHardTestingBackground.arff ResultsTree/CircleHardTestingBackground0705
 
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingAll.arff ResultsTree/TwoCircleSoftTestingAll0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingSignal.arff ResultsTree/TwoCircleSoftTestingSignal0611
-sbatch -c 4 --time=4320 --mem=15000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingBackground.arff ResultsTree/TwoCircleSoftTestingBackground0611
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleSoftTraining.arff CircleSoftTestingAll.arff ResultsTree/CircleSoftTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleSoftTraining.arff CircleSoftTestingSignal.arff ResultsTree/CircleSoftTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree CircleSoftTraining.arff CircleSoftTestingBackground.arff ResultsTree/CircleSoftTestingBackground0705
+
+
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingAll.arff ResultsTree/TwoCircleHardTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingSignal.arff ResultsTree/TwoCircleHardTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleHardTraining.arff TwoCircleHardTestingBackground.arff ResultsTree/TwoCircleHardTestingBackground0705
+
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingAll.arff ResultsTree/TwoCircleSoftTestingAll0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingSignal.arff ResultsTree/TwoCircleSoftTestingSignal0705
+sbatch -c 4 --time=6480 --mem=20000 run2DTree TwoCircleSoftTraining.arff TwoCircleSoftTestingBackground.arff ResultsTree/TwoCircleSoftTestingBackground0705
