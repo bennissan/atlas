@@ -1,35 +1,27 @@
 #!/bin/bash
-#SBATCH -p largemem
-#SBATCH --constraint=M3
-#SBATCH --ntasks-per-core=1
-#SBATCH --ntasks=1
-#SBATCH --output=my_batch.%N.%J.out
-#SBATCH --error=my_batch.%N.%J.err
-#SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=bnissa01@tufts.edu
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearHardTestingAll0705.out --error=LinearHardTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearHardTraining LinearHardTestingAll Results/LinearHardTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearHardTestingSignal0705.out --error=LinearHardTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearHardTraining LinearHardTestingSignal Results/LinearHardTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearHardTestingBackground0705.out --error=LinearHardTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearHardTraining LinearHardTestingBackground Results/LinearHardTestingBackground0705
 
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearHardTraining LinearHardTestingAll Results/LinearHardTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearHardTraining LinearHardTestingSignal Results/LinearHardTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearHardTraining LinearHardTestingBackground Results/LinearHardTestingBackground0705
-
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearSoftTraining LinearSoftTestingAll Results/LinearSoftTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearSoftTraining LinearSoftTestingSignal Results/LinearSoftTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D LinearSoftTraining LinearSoftTestingBackground Results/LinearSoftTestingBackground0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearSoftTestingAll0705.out --error=LinearSoftTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearSoftTraining LinearSoftTestingAll Results/LinearSoftTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearSoftTestingSignal0705.out --error=LinearSoftTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearSoftTraining LinearSoftTestingSignal Results/LinearSoftTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=LinearSoftTestingBackground0705.out --error=LinearSoftTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D LinearSoftTraining LinearSoftTestingBackground Results/LinearSoftTestingBackground0705
 
 
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleHardTraining CircleHardTestingAll Results/CircleHardTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleHardTraining CircleHardTestingSignal Results/CircleHardTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleHardTraining CircleHardTestingBackground Results/CircleHardTestingBackground0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleHardTestingAll0705.out --error=CircleHardTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleHardTraining CircleHardTestingAll Results/CircleHardTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleHardTestingSignal0705.out --error=CircleHardTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleHardTraining CircleHardTestingSignal Results/CircleHardTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleHardTestingBackground0705.out --error=CircleHardTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleHardTraining CircleHardTestingBackground Results/CircleHardTestingBackground0705
 
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleSoftTraining CircleSoftTestingAll Results/CircleSoftTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleSoftTraining CircleSoftTestingSignal Results/CircleSoftTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D CircleSoftTraining CircleSoftTestingBackground Results/CircleSoftTestingBackground0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleSoftTestingAll0705.out --error=CircleSoftTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleSoftTraining CircleSoftTestingAll Results/CircleSoftTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleSoftTestingSignal0705.out --error=CircleSoftTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleSoftTraining CircleSoftTestingSignal Results/CircleSoftTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=CircleSoftTestingBackground0705.out --error=CircleSoftTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D CircleSoftTraining CircleSoftTestingBackground Results/CircleSoftTestingBackground0705
 
 
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleHardTraining TwoCircleHardTestingAll Results/TwoCircleHardTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleHardTraining TwoCircleHardTestingSignal Results/TwoCircleHardTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleHardTraining TwoCircleHardTestingBackground Results/TwoCircleHardTestingBackground0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleHardTestingAll0705.out --error=TwoCircleHardTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleHardTraining TwoCircleHardTestingAll Results/TwoCircleHardTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleHardTestingSignal0705.out --error=TwoCircleHardTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleHardTraining TwoCircleHardTestingSignal Results/TwoCircleHardTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleHardTestingBackground0705.out --error=TwoCircleHardTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleHardTraining TwoCircleHardTestingBackground Results/TwoCircleHardTestingBackground0705
 
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleSoftTraining TwoCircleSoftTestingAll Results/TwoCircleSoftTestingAll0705
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleSoftTraining TwoCircleSoftTestingSignal Results/TwoCircleSoftTestingSignal0705
-sbatch -c 4 --time=6480 --mem=20000 run2D TwoCircleSoftTraining TwoCircleSoftTestingBackground Results/TwoCircleSoftTestingBackground0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleSoftTestingAll0705.out --error=TwoCircleSoftTestingAll0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleSoftTraining TwoCircleSoftTestingAll Results/TwoCircleSoftTestingAll0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleSoftTestingSignal0705.out --error=TwoCircleSoftTestingSignal0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleSoftTraining TwoCircleSoftTestingSignal Results/TwoCircleSoftTestingSignal0705
+sbatch -p largemem -c 4 --time=6480 --mem=20000 --output=TwoCircleSoftTestingBackground0705.out --error=TwoCircleSoftTestingBackground0705.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu run2D TwoCircleSoftTraining TwoCircleSoftTestingBackground Results/TwoCircleSoftTestingBackground0705
+
