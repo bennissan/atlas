@@ -18,8 +18,6 @@ from sys import argv
 from time import time
 from math import sqrt
 
-startTime = time()
-
 # The training and testing sets, respectively
 trainFile = argv[1]
 testFile = argv[2]
@@ -35,9 +33,11 @@ efficiencies = []
 FPFs = []
 FNFs = []
 distances = []
+times = []
 
 i = 1
 for stumpCount in stumpCounts:
+	startTime = time()
 	# Runs BDT program through terminal command and saves output
 	trainAndTest = ["../Packages/WEKA/BDTStumpWEKA", trainFile, testFile, str(stumpCount)]
 	output = Popen(trainAndTest, stdout = PIPE).communicate()[0]
@@ -57,6 +57,7 @@ for stumpCount in stumpCounts:
 	FPFs.append(FPF)
 	FNFs.append(FNF)
 	distances.append(distance)
+	times.append(time() - startTime)
 
 	# Tracks progress
 	print "Progress: %(current)d/%(total)d" % {"current": i, "total": len(stumpCounts)}
@@ -67,10 +68,6 @@ for stumpCount in stumpCounts:
 with open(resultFile, "w") as results:
 	i = 0
 	for stumpCount in stumpCounts:
-		line = " ".join([str(stumpCount), str(efficiencies[i]), str(FPFs[i]), str(FNFs[i]), str(distances[i]), "\n"])
+		line = " ".join([str(stumpCount), str(efficiencies[i]), str(FPFs[i]), str(FNFs[i]), str(distances[i]), str(times[i]), "\n"])
 		results.write(line)
 		i += 1
-
-
-# Reports runtime
-print "Total runtime: " + str(time() - startTime)

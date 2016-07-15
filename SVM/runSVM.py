@@ -18,8 +18,6 @@ from sys import argv
 from time import time
 from math import sqrt
 
-startTime = time()
-
 # The training and testing sets, respectively
 trainFile = argv[1]
 testFile = argv[2]
@@ -34,6 +32,7 @@ FPFs = []
 FNFs = []
 efficiencies = []
 distances = []
+times = []
 
 # Trains the SVM and saves the number of support vectors used
 def train(c, gamma, trainFile):
@@ -113,9 +112,11 @@ def compare(testFile, predictionFile):
 # Runs all of the above functions to perform a
 # full run of the SVM for a given c and gamma.
 def trainAndTest(c, gamma, trainFile, testFile):
+	startTime = time()
 	modelFile = train(c, gamma, trainFile)
 	predictionFile = test(testFile, modelFile)
 	compare(testFile, predictionFile)
+	times.append(time() - startTime)
 
 
 # Performs a full SVM run for all of the given c and gamma
@@ -125,10 +126,7 @@ with open(resultFile, 'w') as results:
 	for c in Cs:
 		for gamma in Gammas:
 			trainAndTest(c, gamma, trainFile, testFile)
-			line = " ".join([str(c), str(gamma), str(nSVs[i]), str(FPFs[i]), str(FNFs[i]), str(efficiencies[i]), str(distances[i]), "\n"])
+			line = " ".join([str(c), str(gamma), str(nSVs[i]), str(FPFs[i]), str(FNFs[i]), str(efficiencies[i]), str(distances[i]), str(times[i]), "\n"])
 			results.write(line)
 			print "Progress: %(current)d/%(total)d" % {"current": i + 1, "total": len(Cs) * len(Gammas)} 
 			i += 1
-
-# Reports runtime
-print "Total runtime: " + str(time() - startTime) + " seconds"

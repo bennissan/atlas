@@ -18,8 +18,6 @@ from sys import argv
 from time import time
 from math import sqrt
 
-startTime = time()
-
 # The training and testing sets, respectively
 trainFile = argv[1]
 testFile = argv[2]
@@ -35,9 +33,11 @@ efficiencies = []
 FPFs = []
 FNFs = []
 distances = []
+times = []
 
 i = 1
 for treeCount in treeCounts:
+	startTime = time()
 	# Runs BDT program through terminal command and saves output
 	trainAndTest = ["../Packages/WEKA/BDTTreeWEKA", trainFile, testFile, str(treeCount)]
 	output = Popen(trainAndTest, stdout = PIPE).communicate()[0]
@@ -57,6 +57,8 @@ for treeCount in treeCounts:
 	FPFs.append(FPF)
 	FNFs.append(FNF)
 	distances.append(distance)
+	times.append(time() - startTime)
+
 
 	# Tracks progress
 	print "Progress: %(current)d/%(total)d" % {"current": i, "total": len(treeCounts)}
@@ -67,10 +69,6 @@ for treeCount in treeCounts:
 with open(resultFile, "w") as results:
 	i = 0
 	for treeCount in treeCounts:
-		line = " ".join([str(treeCount), str(efficiencies[i]), str(FPFs[i]), str(FNFs[i]), str(distances[i]), "\n"])
+		line = " ".join([str(treeCount), str(efficiencies[i]), str(FPFs[i]), str(FNFs[i]), str(distances[i]), str(times[i]), "\n"])
 		results.write(line)
 		i += 1
-
-
-# Reports runtime
-print "Total runtime: " + str(time() - startTime)
