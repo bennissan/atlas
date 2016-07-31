@@ -7,7 +7,7 @@ for i in range(size):
 	f1 = random.uniform(0, 10)
 	f2 = random.uniform(0, 10)
 	f3 = random.uniform(0, 10)
-	if (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 <= 4 or (f1 - 6) ** 2 + (f2 - 6) ** 2  + (f3 - 6) ** 2 <= 2:
+	if (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 <= 4 or (f1 - 7) ** 2 + (f2 - 7) ** 2  + (f3 - 7) ** 2 <= 4:
 		table[i][0] = "+1"
 	else:
 		table[i][0] = "-1"

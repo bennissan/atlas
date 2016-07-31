@@ -10,7 +10,7 @@ for i in range(size):
 		Class = 1
 	else:
 		Class = -1
-	if 2.5 < (f1 - 2) ** 2 + (f2 - 2) ** 2 < 5.5:
+	if 2.75 < (f1 - 2) ** 2 + (f2 - 2) ** 2 < 5.25:
 		if random.random() <= .15:
 			Class *= -1
 	if Class == 1:
