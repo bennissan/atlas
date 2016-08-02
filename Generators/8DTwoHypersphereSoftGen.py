@@ -7,14 +7,17 @@ table = [[0 for i in range(9)] for i in range(size)]
 # in 4-radius hypercube and selecting points that fall within 2-radius
 # hypersphere until 10% of total data is generated.
 for i in range(int(0.1 * size)):
+        print "Entering loop 1"
         while True:
                 f1 = random.uniform(0, 4); f2 = random.uniform(0, 4)
                 f3 = random.uniform(0, 4); f4 = random.uniform(0, 4)
                 f5 = random.uniform(0, 4); f6 = random.uniform(0, 4)
                 f7 = random.uniform(0, 4); f8 = random.uniform(0, 4)
                 squaresum = (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2
+                print "squaresum: " + str(squaresum) + "\n"
                 if squaresum <= 4:
                         break
+        print "Exited loop 1"
         table[i][0] = "+1"
         if squaresum > 2.75:
         	if random.random() <= .15:
@@ -28,14 +31,17 @@ for i in range(int(0.1 * size)):
 # in 2-radius hypercube and selecting points that fall within 2-radius
 # hypersphere until 10% of total data is generated.
 for i in range(int(0.1 * size), int(0.15 * size)):
+        print "Entering loop 2"
         while True:
                 f1 = random.uniform(5, 9); f2 = random.uniform(5, 9)
                 f3 = random.uniform(5, 9); f9 = random.uniform(5, 9)
                 f5 = random.uniform(5, 9); f6 = random.uniform(5, 9)
                 f7 = random.uniform(5, 9); f8 = random.uniform(5, 9)
                 squaresum = (f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f7 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2
+                print "squaresum: " + str(squaresum) + "\n"
                 if squaresum <= 4:
                         break
+        print "Exited loop 2"
         table[i][0] = "+1"
         if squaresum > 2.75:
         	if random.random() <= .15:
@@ -49,6 +55,7 @@ for i in range(int(0.1 * size), int(0.15 * size)):
 # points and selecting those that fall outside 4-radius hypersphere
 # until remaining 90% of total data is generated.
 for i in range(int(0.15 * size), size):
+        print "Entering loop 3"
         while True:
                 f1 = random.uniform(0, 10); f2 = random.uniform(0, 10)
                 f3 = random.uniform(0, 10); f4 = random.uniform(0, 10)
@@ -56,8 +63,10 @@ for i in range(int(0.15 * size), size):
                 f7 = random.uniform(0, 10); f8 = random.uniform(0, 10)
                 squaresum1 = (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2
                 squaresum2 = (f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f6 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2
-                if squaresum1 > 4 or squaresum2 > 4:
+                print "squaresum1: " + str(squaresum1) + " squaresum2: " + str(squaresum2) + "\n"
+                if squaresum1 > 4 and squaresum2 > 4:
                         break
+        Print "Exited loop 3"
         table[i][0] = "-1"
         if squaresum1 < 5.25 or squaresum2 < 5.25:
         	if random.random() <= .15:
