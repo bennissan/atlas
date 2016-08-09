@@ -1,5 +1,5 @@
 """
-runBDTStump.py
+RunBDTStump.py
 Ben Nissan
 
 Trains and tests boosted decision stumps through WEKA to classify a set of provided data

@@ -7,16 +7,13 @@ table = [[0 for i in range(9)] for i in range(size)]
 # in 4-radius hypercube and selecting points that fall within 2-radius
 # hypersphere until 10% of total data is generated.
 for i in range(int(0.1 * size)):
-        print "Entering loop 1"
         while True:
                 f1 = random.uniform(0, 4); f2 = random.uniform(0, 4)
                 f3 = random.uniform(0, 4); f4 = random.uniform(0, 4)
                 f5 = random.uniform(0, 4); f6 = random.uniform(0, 4)
                 f7 = random.uniform(0, 4); f8 = random.uniform(0, 4)
-                print "squaresum: " + str((f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2) + "\n"
                 if (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2 <= 4:
                         break
-        print "Exited loop 1"
         table[i][0] = "+1"
         table[i][1] = f1; table[i][2] = f2
         table[i][3] = f3; table[i][4] = f4
@@ -26,17 +23,14 @@ for i in range(int(0.1 * size)):
 # Generates signal data in second hypersphere by randomly generating points
 # in 2-radius hypercube and selecting points that fall within 2-radius
 # hypersphere until 10% of total data is generated.
-for i in range(int(0.1 * size), int(0.15 * size)):
-        print "Entering loop 2"
+for i in range(int(0.1 * size), int(0.2 * size)):
         while True:
                 f1 = random.uniform(5, 9); f2 = random.uniform(5, 9)
-                f3 = random.uniform(5, 9); f9 = random.uniform(5, 9)
+                f3 = random.uniform(5, 9); f4 = random.uniform(5, 9)
                 f5 = random.uniform(5, 9); f6 = random.uniform(5, 9)
                 f7 = random.uniform(5, 9); f8 = random.uniform(5, 9)
-                print "squaresum: " + str((f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f7 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2) + "\n"
-                if (f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f7 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2 <= 4:
+                if (f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f6 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2 <= 4:
                         break
-        print "Exited loop 2"
         table[i][0] = "+1"
         table[i][1] = f1; table[i][2] = f2
         table[i][3] = f3; table[i][4] = f4
@@ -46,18 +40,15 @@ for i in range(int(0.1 * size), int(0.15 * size)):
 # Generates background data outside hypersphere by randomly generating
 # points and selecting those that fall outside 4-radius hypersphere
 # until remaining 90% of total data is generated.
-for i in range(int(0.15 * size), size):
-        print "Entering loop 3"
+for i in range(int(0.2 * size), size):
         while True:
                 f1 = random.uniform(0, 10); f2 = random.uniform(0, 10)
                 f3 = random.uniform(0, 10); f4 = random.uniform(0, 10)
                 f5 = random.uniform(0, 10); f6 = random.uniform(0, 10)
                 f7 = random.uniform(0, 10); f8 = random.uniform(0, 10)
-                print "squaresum1: " + str((f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2) + " squaresum2: " + str((f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f6 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2) + "\n"
                 if (f1 - 2) ** 2 + (f2 - 2) ** 2 + (f3 - 2) ** 2 + (f4 - 2) ** 2 + (f5 - 2) ** 2 + (f6 - 2) ** 2 + (f7 - 2) ** 2 + (f8 - 2) ** 2 > 4 and\
                    (f1 - 7) ** 2 + (f2 - 7) ** 2 + (f3 - 7) ** 2 + (f4 - 7) ** 2 + (f5 - 7) ** 2 + (f6 - 7) ** 2 + (f7 - 7) ** 2 + (f8 - 7) ** 2 > 4:
                         break
-        print "Exited loop 3"
         table[i][0] = "-1"
         table[i][1] = f1; table[i][2] = f2
         table[i][3] = f3; table[i][4] = f4

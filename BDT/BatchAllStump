@@ -1,0 +1,81 @@
+#!/bin/bash
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearHardTraining.arff LinearHardTestingAll.arff ResultsStump/LinearHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearHardTraining.arff LinearHardTestingSignal.arff ResultsStump/LinearHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearHardTraining.arff LinearHardTestingBackground.arff ResultsStump/LinearHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearSoftTraining.arff LinearSoftTestingAll.arff ResultsStump/LinearSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearSoftTraining.arff LinearSoftTestingSignal.arff ResultsStump/LinearSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump LinearSoftTraining.arff LinearSoftTestingBackground.arff ResultsStump/LinearSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleHardTraining.arff CircleHardTestingAll.arff ResultsStump/CircleHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleHardTraining.arff CircleHardTestingSignal.arff ResultsStump/CircleHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleHardTraining.arff CircleHardTestingBackground.arff ResultsStump/CircleHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleSoftTraining.arff CircleSoftTestingAll.arff ResultsStump/CircleSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleSoftTraining.arff CircleSoftTestingSignal.arff ResultsStump/CircleSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump CircleSoftTraining.arff CircleSoftTestingBackground.arff ResultsStump/CircleSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleHardTraining.arff TwoCircleHardTestingAll.arff ResultsStump/TwoCircleHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleHardTraining.arff TwoCircleHardTestingSignal.arff ResultsStump/TwoCircleHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleHardTraining.arff TwoCircleHardTestingBackground.arff ResultsStump/TwoCircleHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleSoftTraining.arff TwoCircleSoftTestingAll.arff ResultsStump/TwoCircleSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleSoftTraining.arff TwoCircleSoftTestingSignal.arff ResultsStump/TwoCircleSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoCircleSoftTraining.arff TwoCircleSoftTestingBackground.arff ResultsStump/TwoCircleSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneHardTraining.arff PlaneHardTestingAll.arff ResultsStump/PlaneHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneHardTraining.arff PlaneHardTestingSignal.arff ResultsStump/PlaneHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneHardTraining.arff PlaneHardTestingBackground.arff ResultsStump/PlaneHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneSoftTraining.arff PlaneSoftTestingAll.arff ResultsStump/PlaneSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneSoftTraining.arff PlaneSoftTestingSignal.arff ResultsStump/PlaneSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump PlaneSoftTraining.arff PlaneSoftTestingBackground.arff ResultsStump/PlaneSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereHardTraining.arff SphereHardTestingAll.arff ResultsStump/SphereHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereHardTraining.arff SphereHardTestingSignal.arff ResultsStump/SphereHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereHardTraining.arff SphereHardTestingBackground.arff ResultsStump/SphereHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereSoftTraining.arff SphereSoftTestingAll.arff ResultsStump/SphereSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereSoftTraining.arff SphereSoftTestingSignal.arff ResultsStump/SphereSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump SphereSoftTraining.arff SphereSoftTestingBackground.arff ResultsStump/SphereSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereHardTraining.arff TwoSphereHardTestingAll.arff ResultsStump/TwoSphereHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereHardTraining.arff TwoSphereHardTestingSignal.arff ResultsStump/TwoSphereHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereHardTraining.arff TwoSphereHardTestingBackground.arff ResultsStump/TwoSphereHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereSoftTraining.arff TwoSphereSoftTestingAll.arff ResultsStump/TwoSphereSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereSoftTraining.arff TwoSphereSoftTestingSignal.arff ResultsStump/TwoSphereSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump TwoSphereSoftTraining.arff TwoSphereSoftTestingBackground.arff ResultsStump/TwoSphereSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneHardTraining.arff 8DHyperplaneHardTestingAll.arff ResultsStump/8DHyperplaneHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneHardTraining.arff 8DHyperplaneHardTestingSignal.arff ResultsStump/8DHyperplaneHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneHardTraining.arff 8DHyperplaneHardTestingBackground.arff ResultsStump/8DHyperplaneHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneSoftTraining.arff 8DHyperplaneSoftTestingAll.arff ResultsStump/8DHyperplaneSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneSoftTraining.arff 8DHyperplaneSoftTestingSignal.arff ResultsStump/8DHyperplaneSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHyperplaneSoftTraining.arff 8DHyperplaneSoftTestingBackground.arff ResultsStump/8DHyperplaneSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereHardTraining.arff 8DHypersphereHardTestingAll.arff ResultsStump/8DHypersphereHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereHardTraining.arff 8DHypersphereHardTestingSignal.arff ResultsStump/8DHypersphereHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereHardTraining.arff 8DHypersphereHardTestingBackground.arff ResultsStump/8DHypersphereHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereSoftTraining.arff 8DHypersphereSoftTestingAll.arff ResultsStump/8DHypersphereSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereSoftTraining.arff 8DHypersphereSoftTestingSignal.arff ResultsStump/8DHypersphereSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DHypersphereSoftTraining.arff 8DHypersphereSoftTestingBackground.arff ResultsStump/8DHypersphereSoftTestingBackground0809
+
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereHardTraining.arff 8DTwoHypersphereHardTestingAll.arff ResultsStump/8DTwoHypersphereHardTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereHardTraining.arff 8DTwoHypersphereHardTestingSignal.arff ResultsStump/8DTwoHypersphereHardTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereHardTraining.arff 8DTwoHypersphereHardTestingBackground.arff ResultsStump/8DTwoHypersphereHardTestingBackground0809
+
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereSoftTraining.arff 8DTwoHypersphereSoftTestingAll.arff ResultsStump/8DTwoHypersphereSoftTestingAll0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereSoftTraining.arff 8DTwoHypersphereSoftTestingSignal.arff ResultsStump/8DTwoHypersphereSoftTestingSignal0809
+sbatch -p largemem -c 4 --time=10000 --mem=50000 --output=BDS.%J.out --error=BDS.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunBDTStump 8DTwoHypersphereSoftTraining.arff 8DTwoHypersphereSoftTestingBackground.arff ResultsStump/8DTwoHypersphereSoftTestingBackground0809
+

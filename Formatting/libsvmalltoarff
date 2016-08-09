@@ -33,6 +33,28 @@ python libsvmtoarff2d.py TwoCircleSoftTestingSignal
 python libsvmtoarff2d.py TwoCircleSoftTestingBackground
 
 
+python libsvmtoarff3d.py PlaneHardTraining
+python libsvmtoarff3d.py PlaneHardTestingAll
+python libsvmtoarff3d.py PlaneHardTestingSignal
+python libsvmtoarff3d.py PlaneHardTestingBackground
+
+python libsvmtoarff3d.py PlaneSoftTraining
+python libsvmtoarff3d.py PlaneSoftTestingAll
+python libsvmtoarff3d.py PlaneSoftTestingSignal
+python libsvmtoarff3d.py PlaneSoftTestingBackground
+
+
+python libsvmtoarff3d.py SphereHardTraining
+python libsvmtoarff3d.py SphereHardTestingAll
+python libsvmtoarff3d.py SphereHardTestingSignal
+python libsvmtoarff3d.py SphereHardTestingBackground
+
+python libsvmtoarff3d.py SphereSoftTraining
+python libsvmtoarff3d.py SphereSoftTestingAll
+python libsvmtoarff3d.py SphereSoftTestingSignal
+python libsvmtoarff3d.py SphereSoftTestingBackground
+
+
 python libsvmtoarff3d.py TwoSphereHardTraining
 python libsvmtoarff3d.py TwoSphereHardTestingAll
 python libsvmtoarff3d.py TwoSphereHardTestingSignal
@@ -44,12 +66,34 @@ python libsvmtoarff3d.py TwoSphereSoftTestingSignal
 python libsvmtoarff3d.py TwoSphereSoftTestingBackground
 
 
-python libsvmtoarff3d.py TwoSphereHard1MTraining
-python libsvmtoarff3d.py TwoSphereHard1MTestingAll
-python libsvmtoarff3d.py TwoSphereHard1MTestingSignal
-python libsvmtoarff3d.py TwoSphereHard1MTestingBackground
+python libsvmtoarff8d.py 8DHyperplaneHardTraining
+python libsvmtoarff8d.py 8DHyperplaneHardTestingAll
+python libsvmtoarff8d.py 8DHyperplaneHardTestingSignal
+python libsvmtoarff8d.py 8DHyperplaneHardTestingBackground
 
-python libsvmtoarff3d.py TwoSphereSoft1MTraining
-python libsvmtoarff3d.py TwoSphereSoft1MTestingAll
-python libsvmtoarff3d.py TwoSphereSoft1MTestingSignal
-python libsvmtoarff3d.py TwoSphereSoft1MTestingBackground
+python libsvmtoarff8d.py 8DHyperplaneSoftTraining
+python libsvmtoarff8d.py 8DHyperplaneSoftTestingAll
+python libsvmtoarff8d.py 8DHyperplaneSoftTestingSignal
+python libsvmtoarff8d.py 8DHyperplaneSoftTestingBackground
+
+
+python libsvmtoarff8d.py 8DHypersphereHardTraining
+python libsvmtoarff8d.py 8DHypersphereHardTestingAll
+python libsvmtoarff8d.py 8DHypersphereHardTestingSignal
+python libsvmtoarff8d.py 8DHypersphereHardTestingBackground
+
+python libsvmtoarff8d.py 8DHypersphereSoftTraining
+python libsvmtoarff8d.py 8DHypersphereSoftTestingAll
+python libsvmtoarff8d.py 8DHypersphereSoftTestingSignal
+python libsvmtoarff8d.py 8DHypersphereSoftTestingBackground
+
+
+python libsvmtoarff8d.py 8DTwoHypersphereHardTraining
+python libsvmtoarff8d.py 8DTwoHypersphereHardTestingAll
+python libsvmtoarff8d.py 8DTwoHypersphereHardTestingSignal
+python libsvmtoarff8d.py 8DTwoHypersphereHardTestingBackground
+
+python libsvmtoarff8d.py 8DTwoHypersphereSoftTraining
+python libsvmtoarff8d.py 8DTwoHypersphereSoftTestingAll
+python libsvmtoarff8d.py 8DTwoHypersphereSoftTestingSignal
+python libsvmtoarff8d.py 8DTwoHypersphereSoftTestingBackground

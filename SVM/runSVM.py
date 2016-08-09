@@ -1,5 +1,5 @@
 """
-runSVM.py
+RunSVM.py
 Ben Nissan
 
 Trains and tests support vector machines (or SVMs) with libsvm to classify a set of provided data with different c and

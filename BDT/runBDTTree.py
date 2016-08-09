@@ -1,5 +1,5 @@
 """
-runBDTTree.py
+RunBDTTree.py
 Ben Nissan
 
 Trains and tests boosted decision trees through WEKA to classify a set of provided data
