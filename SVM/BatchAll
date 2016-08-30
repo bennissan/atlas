@@ -1,85 +1,85 @@
 #!/bin/bash
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingAll Results/LinearHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingSignal Results/LinearHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingBackground Results/LinearHardTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingAll Results/LinearHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingSignal Results/LinearHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearHardTraining LinearHardTestingBackground Results/LinearHardTestingBackground0830
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingAll Results/LinearSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingSignal Results/LinearSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingBackground Results/LinearSoftTestingBackground0823
-
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingAll Results/CircleHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingSignal Results/CircleHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingBackground Results/CircleHardTestingBackground0823
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingAll Results/CircleSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingSignal Results/CircleSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingBackground Results/CircleSoftTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingAll Results/LinearSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingSignal Results/LinearSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM LinearSoftTraining LinearSoftTestingBackground Results/LinearSoftTestingBackground0830
 
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingAll Results/TwoCircleHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingSignal Results/TwoCircleHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingBackground Results/TwoCircleHardTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingAll Results/CircleHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingSignal Results/CircleHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleHardTraining CircleHardTestingBackground Results/CircleHardTestingBackground0830
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingAll Results/TwoCircleSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingSignal Results/TwoCircleSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingBackground Results/TwoCircleSoftTestingBackground0823
-
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingAll Results/PlaneHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingSignal Results/PlaneHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingBackground Results/PlaneHardTestingBackground0823
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingAll Results/PlaneSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingSignal Results/PlaneSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingBackground Results/PlaneSoftTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingAll Results/CircleSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingSignal Results/CircleSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM CircleSoftTraining CircleSoftTestingBackground Results/CircleSoftTestingBackground0830
 
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingAll Results/SphereHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingSignal Results/SphereHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingBackground Results/SphereHardTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingAll Results/TwoCircleHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingSignal Results/TwoCircleHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleHardTraining TwoCircleHardTestingBackground Results/TwoCircleHardTestingBackground0830
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingAll Results/SphereSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingSignal Results/SphereSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingBackground Results/SphereSoftTestingBackground0823
-
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingAll Results/TwoSphereHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingSignal Results/TwoSphereHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingBackground Results/TwoSphereHardTestingBackground0823
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingAll Results/TwoSphereSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingSignal Results/TwoSphereSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingBackground Results/TwoSphereSoftTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingAll Results/TwoCircleSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingSignal Results/TwoCircleSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoCircleSoftTraining TwoCircleSoftTestingBackground Results/TwoCircleSoftTestingBackground0830
 
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingAll Results/8DHyperplaneHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingSignal Results/8DHyperplaneHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingBackground Results/8DHyperplaneHardTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingAll Results/PlaneHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingSignal Results/PlaneHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneHardTraining PlaneHardTestingBackground Results/PlaneHardTestingBackground0830
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingAll Results/8DHyperplaneSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingSignal Results/8DHyperplaneSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingBackground Results/8DHyperplaneSoftTestingBackground0823
-
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingAll Results/8DHypersphereHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingSignal Results/8DHypersphereHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingBackground Results/8DHypersphereHardTestingBackground0823
-
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingAll Results/8DHypersphereSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingSignal Results/8DHypersphereSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingBackground Results/8DHypersphereSoftTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingAll Results/PlaneSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingSignal Results/PlaneSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM PlaneSoftTraining PlaneSoftTestingBackground Results/PlaneSoftTestingBackground0830
 
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingAll Results/8DTwoHypersphereHardTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingSignal Results/8DTwoHypersphereHardTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingBackground Results/8DTwoHypersphereHardTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingAll Results/SphereHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingSignal Results/SphereHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereHardTraining SphereHardTestingBackground Results/SphereHardTestingBackground0830
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingAll Results/8DTwoHypersphereSoftTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingSignal Results/8DTwoHypersphereSoftTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingBackground Results/8DTwoHypersphereSoftTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingAll Results/SphereSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingSignal Results/SphereSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM SphereSoftTraining SphereSoftTestingBackground Results/SphereSoftTestingBackground0830
 
 
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingAll Results/MonteCarloTestingAll0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingSignal Results/MonteCarloTestingSignal0823
-sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingBackground Results/MonteCarloTestingBackground0823
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingAll Results/TwoSphereHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingSignal Results/TwoSphereHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereHardTraining TwoSphereHardTestingBackground Results/TwoSphereHardTestingBackground0830
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingAll Results/TwoSphereSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingSignal Results/TwoSphereSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM TwoSphereSoftTraining TwoSphereSoftTestingBackground Results/TwoSphereSoftTestingBackground0830
+
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingAll Results/8DHyperplaneHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingSignal Results/8DHyperplaneHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneHardTraining 8DHyperplaneHardTestingBackground Results/8DHyperplaneHardTestingBackground0830
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingAll Results/8DHyperplaneSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingSignal Results/8DHyperplaneSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHyperplaneSoftTraining 8DHyperplaneSoftTestingBackground Results/8DHyperplaneSoftTestingBackground0830
+
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingAll Results/8DHypersphereHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingSignal Results/8DHypersphereHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereHardTraining 8DHypersphereHardTestingBackground Results/8DHypersphereHardTestingBackground0830
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingAll Results/8DHypersphereSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingSignal Results/8DHypersphereSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DHypersphereSoftTraining 8DHypersphereSoftTestingBackground Results/8DHypersphereSoftTestingBackground0830
+
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingAll Results/8DTwoHypersphereHardTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingSignal Results/8DTwoHypersphereHardTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereHardTraining 8DTwoHypersphereHardTestingBackground Results/8DTwoHypersphereHardTestingBackground0830
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingAll Results/8DTwoHypersphereSoftTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingSignal Results/8DTwoHypersphereSoftTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM 8DTwoHypersphereSoftTraining 8DTwoHypersphereSoftTestingBackground Results/8DTwoHypersphereSoftTestingBackground0830
+
+
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingAll Results/MonteCarloTestingAll0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingSignal Results/MonteCarloTestingSignal0830
+sbatch -p largemem -c 4 --time=7200 --mem=50000 --output=SVM.%J.out --error=SVM.%J.err --mail-type=END,FAIL --mail-user=ben.nissan@tufts.edu RunSVM MonteCarloTraining MonteCarloTestingBackground Results/MonteCarloTestingBackground0830

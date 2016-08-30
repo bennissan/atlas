@@ -41,6 +41,7 @@ for stumpCount in stumpCounts:
 	# Runs BDT program through terminal command and saves output
 	trainAndTest = ["../Packages/WEKA/BDTStumpWEKA", trainFile, testFile, str(stumpCount)]
 	output = Popen(trainAndTest, stdout = PIPE).communicate()[0]
+	times.append(time() - startTime)
 	
 	# Filters out useful portions of output text
 	confusionMatrix = output.split("=== Error on test data ===")[1].split("classified as")[1].split()
@@ -57,7 +58,6 @@ for stumpCount in stumpCounts:
 	FPFs.append(FPF)
 	FNFs.append(FNF)
 	distances.append(distance)
-	times.append(time() - startTime)
 
 	# Tracks progress
 	print "Progress: %(current)d/%(total)d" % {"current": i, "total": len(stumpCounts)}
