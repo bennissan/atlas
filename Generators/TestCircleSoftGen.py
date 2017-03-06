@@ -20,7 +20,7 @@ for i in range(size):
 	table[i][1] = f1
 	table[i][2] = f2
 
-with open('TestCircleSoftTraining', 'w') as training, open('TestCircleSoftTestingAll', 'w') as testingall, open('TestCircleSoftTestingSignal', 'w') as testingsignal, open('CircleSoftTestingBackground', 'w') as testingbackground:
+with open('TestCircleSoftTraining.txt', 'w') as training, open('TestCircleSoftTestingAll.txt', 'w') as testingall, open('TestCircleSoftTestingSignal.txt', 'w') as testingsignal, open('CircleSoftTestingBackground.txt', 'w') as testingbackground:
 	for i in range(0, size, 2):
 		training.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + "\n")
 	for i in range(1, size, 2):

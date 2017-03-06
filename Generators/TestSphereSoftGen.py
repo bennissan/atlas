@@ -22,7 +22,7 @@ for i in range(size):
         table[i][2] = f2
         table[i][3] = f3
 
-with open('TestSphereSoftTraining', 'w') as training, open('TestSphereSoftTestingAll', 'w') as testingall, open('TestSphereSoftTestingSignal', 'w') as testingsignal, open('TestSphereSoftTestingBackground', 'w') as testingbackground:
+with open('TestSphereSoftTraining.txt', 'w') as training, open('TestSphereSoftTestingAll.txt', 'w') as testingall, open('TestSphereSoftTestingSignal.txt', 'w') as testingsignal, open('TestSphereSoftTestingBackground.txt', 'w') as testingbackground:
         for i in range(0, size, 2):
                 training.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + " 3:" + str(table[i][3]) + "\n")
         for i in range(1, size, 2):

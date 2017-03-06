@@ -20,7 +20,7 @@ for i in range(size):
 	table[i][1] = f1
 	table[i][2] = f2
 
-with open('LinearSoftTraining', 'w') as training, open('LinearSoftTestingAll', 'w') as testingall, open('LinearSoftTestingSignal', 'w') as testingsignal, open('LinearSoftTestingBackground', 'w') as testingbackground:
+with open('LinearSoftTraining.txt', 'w') as training, open('LinearSoftTestingAll.txt', 'w') as testingall, open('LinearSoftTestingSignal.txt', 'w') as testingsignal, open('LinearSoftTestingBackground.txt', 'w') as testingbackground:
 	for i in range(0, size, 2):
 		training.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + "\n")
 	for i in range(1, size, 2):

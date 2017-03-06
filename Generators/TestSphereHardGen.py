@@ -15,7 +15,7 @@ for i in range(size):
         table[i][2] = f2
         table[i][3] = f3
 
-with open('TestSphereHardTraining', 'w') as training, open('TestSphereHardTestingAll', 'w') as testingall, open('TestSphereHardTestingSignal', 'w') as testingsignal, open('TestSphereHardTestingBackground', 'w') as testingbackground:
+with open('TestSphereHardTraining.txt', 'w') as training, open('TestSphereHardTestingAll.txt', 'w') as testingall, open('TestSphereHardTestingSignal.txt', 'w') as testingsignal, open('TestSphereHardTestingBackground.txt', 'w') as testingbackground:
         for i in range(0, size, 2):
                 training.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + " 3:" + str(table[i][3]) + "\n")
         for i in range(1, size, 2):

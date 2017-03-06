@@ -37,7 +37,7 @@ for i in range(int(0.1 * size), size):
         table[i][5] = f5; table[i][6] = f6
         table[i][7] = f7; table[i][8] = f8
 
-with open('8DHypersphereHardTraining', 'w') as training, open('8DHypersphereHardTestingAll', 'w') as testingall, open('8DHypersphereHardTestingSignal', 'w') as testingsignal, open('8DHypersphereHardTestingBackground', 'w') as testingbackground:
+with open('8DHypersphereHardTraining.txt', 'w') as training, open('8DHypersphereHardTestingAll.txt', 'w') as testingall, open('8DHypersphereHardTestingSignal.txt', 'w') as testingsignal, open('8DHypersphereHardTestingBackground.txt', 'w') as testingbackground:
         for i in range(0, size, 2):
                 training.write(table[i][0] + " 1:" + str(table[i][1]) + " 2:" + str(table[i][2]) + " 3:" + str(table[i][3]) + " 4:" + str(table[i][4]) + " 5:" + str(table[i][5]) + " 6:" + str(table[i][6]) + " 7:" + str(table[i][7]) + " 8:" + str(table[i][8]) + "\n")
         for i in range(1, size, 2):
